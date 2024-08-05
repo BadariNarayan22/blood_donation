@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>bb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+    <description></description>
+    <servlet-name>Search</servlet-name>  
+    <servlet-class>com.bb.controller.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/doSearch</url-pattern>
+  </servlet-mapping>
+   
+    <servlet>
+    <description></description>
+    <servlet-name>donorinfo</servlet-name>  
+    <servlet-class>com.bb.controller.FetchDonor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>donorinfo</servlet-name>
+    <url-pattern>/ViewDonor</url-pattern>
+  </servlet-mapping>
+ 
+   
+     <servlet>
+    <description></description>
+    <servlet-name>receiverinfo</servlet-name>  
+    <servlet-class>com.bb.controller.FetchReceiver</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>receiverinfo</servlet-name>
+    <url-pattern>/ViewReceiver</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>stock</servlet-name>  
+    <servlet-class>com.bb.controller.FetchStock</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>stock</servlet-name>
+    <url-pattern>/ViewStock</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <servlet-name>users</servlet-name>  
+    <servlet-class>com.bb.controller.FetchUsers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>users</servlet-name>
+    <url-pattern>/ViewUsers</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <description></description>
+    <servlet-name>Hospital</servlet-name>  
+    <servlet-class>com.bb.controller.FetchHospitals</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hospital</servlet-name>
+    <url-pattern>/ViewHospitals</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <description></description>
+    <servlet-name>Login</servlet-name>  
+    <servlet-class>com.bb.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LogIn</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <servlet-name>Donor</servlet-name>
+    <servlet-class>com.bb.controller.DonorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Donor</servlet-name>
+    <url-pattern>/regDonor</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>Receiver</servlet-name>
+    <servlet-class>com.bb.controller.ReceiverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Receiver</servlet-name>
+    <url-pattern>/regReceiver</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
